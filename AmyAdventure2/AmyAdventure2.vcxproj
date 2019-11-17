@@ -64,6 +64,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>..\bin\ModLoaderCommon.lib;..\bin\libmodutils.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /b "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure 2\mods\AmyAdventure2\AmyAdventure2.dll"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -84,6 +87,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>..\bin\ModLoaderCommon.lib;..\bin\libmodutils.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
+    <PostBuildEvent>
+      <Command>copy /b "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure 2\mods\AmyAdventure2\AmyAdventure2.dll"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
