@@ -28,7 +28,7 @@ enum BossTitleLetterIDs
 
 NJS_TEXNAME AmyBossTitleTexName[3];
 
-NJS_TEXLIST AmyBossTitleTex{ arrayptrandlengthT(AmyBossTitleTexName, int) };
+NJS_TEXLIST AmyBossTitleTex{ arrayptrandlengthT(AmyBossTitleTexName, Uint32) };
 
 BossTitleLetterData AmyBossTitleLetters[]
 {
